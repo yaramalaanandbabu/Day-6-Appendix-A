@@ -1,0 +1,432 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+    <body style="padding: 100px;">
+    <div class="paral">
+        <style>
+            h1{
+                color:black;
+                font-family: aller;
+                font-size: 45px;
+            }
+            
+        </style>
+    <h1 style="font-size: 30;font-color:skyblue;">Appendix A. Changes from Tivoli NetView for z/OS
+        V6R1 to Tivoli NetView for z/OS V6R2</h1>
+        <p style="font-size: 20;">For a summary of changes for the NetView V6R2 release, see “Summary of Changes for NetView V6R2
+        Program” on page 113.<br>
+See the following sections for new, changed, and deleted command lists, messages, samples, and
+commands from the NetView V6R1 product:<br>
+• “Command Lists” on page 115<br>
+• “Messages” on page 116<br>
+• “Samples” on page 120<br>
+• “Command Changes” on page 121<br>
+        <b>Note:</b> The lists are listed alphabetically from left to right.<br>
+For changes to the NetView for z/OS Enterprise Management Agent; see “Enterprise Management Agent
+            Changes” on page 122.<br></p>
+        <p2 style="font-size: 30;">Summary of Changes for NetView V6R2 Program</p2>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 5px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h2{
+                color:black;
+                font-family: aller;
+                font-size: 30px;
+            }
+        </style>
+        <p3 style="font-size: 20">Whether you have a small installation or you are managing a large, distributed enterprise, the NetView
+program provides efficient systems and network management capability on any platform. The new and
+changed functions in this release are described in the following topics:<br>
+            • “Automation” on page 113<br>
+• “IP Management” on page 113<br>
+• “Sysplex and System Management” on page 114<br>
+• “GDPS Continuous Availability Solution” on page 114<br>
+• “Additional Enhancements” on page 115<br>
+• “Library Changes” on page 115<br>
+For comparison information about prior NetView release functions, refer to the IBM Z NetView website.<br>
+            <img style="width: 600px;height: 600px;" src="p1.png"><br>
+             <img style="width: 600px;height: 600px;" src="p2.png"><br>
+             <img style="width: 600px;height: 600px;" src="p3.png"><br>
+            <img style="width: 600px;height: 600px;" src="p4.png"><br>
+</p3>
+        <p4 style="font-size: 30;">Command List</p4>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 5px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h2{
+                color:black;
+                font-family: aller;
+                font-size: 30px;
+            }
+        </style>
+        <p5 style="font-size: 20">This section lists new and deleted command lists for the NetView V6R2 program:
+<br>• “New Command Lists” on page 116<br>
+• “Deleted Command Lists” on page 116<br>
+Do not issue these command lists from a NetView command line. Most of the NetView command lists that
+are included with the NetView program are used internally by the NetView program and might have
+unpredictable results when issued from a NetView command line.<br><img style="width: 600px;height: 400px;" src="p5.png">
+        </p5>
+        <p6 style="font-size: 30;">Messages</p6>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 5px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h2{
+                color:black;
+                font-family: aller;
+                font-size: 30px;
+            }
+        </style>
+        <p7 style="font-size: 20;">This section lists new and changed messages for the NetView V6R2 program:<br>
+• “New Messages” on page 116<br>
+• “Changed Messages” on page 118<br><b>New Messages</b><br><b>AQN043I</b><br>NO <i>subtower_name server_type</i> SOCKET PATH INFORMATION FORWARDED TO CONTROLLER,REASON <i>'reason'</i><br><b>AQN044I</b><br>
+            ATTRIBUTE <i>attribute_name</i> IS MISSING FOR<i> data_source</i> REPLICATION EVENT<i> class_name</i><br>
+           <b> AQN045I</b><br>
+            INVALID VALUE RECEIVED FOR<i> data_source</i> REPLICATION EVENT<i> class_name,</i> ATTRIBUTE
+            <i>attribute_name</i><br>
+           <b> AQN046I</b><br>
+REPLICATION EVENT <i>class_name</i> IS NOT RECOGNIZED<br>
+<b>AQN047I</b><br>
+data_source REPLICATION EVENT <i>class_name,</i> FORWARDED. RETURN CODE: <i>return_code</i><br>
+<b>AQN048I</b><br>
+<i>data_source</i> REPLICATION EVENT VERSION <i>replication_version</i> DOES NOT MATCH NETVIEW EVENT
+VERSION <i>netview_version</i><br>
+<b>AQN049I</b><br>
+DISPLAY OF REPLICATION WORKLOADS<br>
+<b>AQN050I</b><br>
+DISPLAY OF Q REPLICATION CAPTURE SERVERS DATA<br>
+<b>AQN051I</b><br>
+DISPLAY OF Q REPLICATION APPLY SERVERS DATA<br>
+            <b>AQN052I</b><br>
+            ENT.SYN.<i>prisec.site.domain</i> FOR DOMAIN <i>domain_id</i> SPECIFIES SNA<br>
+<b>AQN053I</b><br>
+<i>command</i> FAILED. <i>Reason: reason. Reason Code: reason_code</i><br>
+<b>AQN054I</b><br>
+REQUIRED ENT.ALT.CONTROLLERS STATEMENT MISSING<br>
+<b>BNH825I</b><br>
+THE AT-TLS SECURITY TYPE IS X'<i>security_type'.</i><br>
+<b>BNH869W</b><br>
+THE CONNECTION TO THE NETVIEW WEB SERVICES SERVER <i>'srvrname'</i> WAS REJECTED BECAUSE
+AT-TLS IS NOT CONFIGURED OR ACTIVE FOR THIS SERVER.<br>
+<b>CNM618A</b><br>
+<i>NetView subsystem ssi_name has not been initialized.</i>.<br>
+<b>CNM743I</b><br>
+<i>Some messages that were issued before the NetView subsystem was initialized were not logged.</i><br>
+<b>CNM744E</b><br>
+<i>The</i> ALESERV <i>token was not deleted: Return Code = return_code Reason Code = reason_code</i><br>
+<b>CNM745E</b><br>
+The DSPSERV <i>token was not deleted: Return Code = return_code Reason Code = reason_code</i><br>
+<b>CNM746I</b><br>
+<i>The user_module module was not deleted from the</i> SYSLOG <i>exit</i><br>
+<b>CNM747I</b><br>
+<i>The required number of plots in the CANZLOG data space are not available. Some messages might be
+missing.</i><br>
+<b>CNM748I</b><br>
+<i>The user_module module was deleted from the</i> SYSLOG <i>exit</i><br>
+<b>CNM749A</b><br>
+<i>Incompatible NetView program or subsystem is defined for subsystem ssi_name</i><br>
+<b>CNM749A</b><br>
+<i>Incompatible NetView program or subsystem is defined for subsystem ssi_name</i><br>
+<b>CNM949I</b><br>
+<i>obj </i>IS TOO LONG<br>
+<b>DWO038I</b><br>
+<i>function</i> IS NOT ALLOWED IN THE <i>product</i> ENVIRONMENT<br>
+<b>DWO096E</b><br>
+<i>part is not installed with attr_name attribute</i><br>
+<b>FKX408I</b><br>
+TRACE INSTANCE STARTED FOR STACK <i>stack</i> BY OPERATOR operid ON TASK c<i>task</i> AT SP <i>sp</i><br>
+<b>FKX409I</b><br>
+TRACE INSTANCE ENDED FOR STACK<i>stack</i> BY OPERATOR operid ON TASK c<i>task</i> AT SP <i>sp</i><br>
+<b>FKX415I</b><br>
+TRACE INSTANCE SUSPENDED FOR STACK <i>stack</i> BY OPERATOR operid ON TASK c<i>task</i> AT SP <i>sp</i><br>
+<b>FKX416I</b><br>
+TRACE INSTANCE SUSPENDED FOR STACK <i>stack</i> BY OPERATOR operid ON TASK c<i>task</i> AT SP <i>sp</i><br>
+<b>FKX417I</b><br>
+TRACE INSTANCE action FAILED FOR STACK <i>stack</i> ON SP <i>sp</i><br>
+<b>FKX418I</b><br>
+TRACE INSTANCE STOPPED ON TASK <i>task</i> FOR STACK <i>stack</i><br>
+<b>FKX419I</b><br>
+TRACE INSTANCE ENDED ON TASK <i>task</i> FOR STACK <i>stack</i><br>
+<b>FKX463I</b><br>
+OPID REQUIRED FOR STOP OR STOPALL OF TRACE INSTANCE<br>
+<b>FKX464I</b><br>
+OPID <i>task</i> DOES NOT HAVE AN ACTIVE TRACE INSTANCE<br>
+<b>FKX465I</b><br>
+NO OPIDS DEFINED FOR TRACE INSTANCES<br>
+<b>FKX466I</b><br>
+NO AVAILABLE OPIDS FOR TRACE INSTANCES<br>
+<b>FKX467I</b><br>
+OPID <i>task</i> ALREADY HAS AN ACTIVE TRACE INSTANCE<br>
+<b>Changed Messages</b><br>
+The following messages changed in one or more of the following ways:<br>
+• The message text changed.<br>
+• The value of a message variable insert changed.<br>
+• The information provided in a multiline write-to-operator (MLWTO) message changed.<br>
+For specific details of how a message is being presented by the NetView program, refer to the online
+message help.<br>
+<b>AQN001I</b><br>
+NO SOCKET PATH NAMES FOUND FOR DATA SOURCE <i>subtower_name</i> DOMAIN <i>domain</i><br>
+<b>AQN002I</b><br>
+DATA COLLECTION FAILED FOR DATA SOURCE <i>subtower_name,</i> SOCKET PATH NAME <i>path</i><br>
+<b>AQN006I</b><br>
+DUPLICATE <i>subtower_name,</i> SOCKET PATH NAME <i>path </i>IGNORED<br>
+<b>AQN007I</b><br>
+DISPLAY ACTIVE/ACTIVE DATA COLLECTION INFORMATION<br>
+<b>AQN008I</b><br>
+REPLICATION SERVER SITUATION OR POLICY NAME IS <i>name</i><br>
+<b>AQN009I</b><br>
+DATA COLLECTION FOR <i>subtower_name</i> RESTARTED<br>
+<b>AQN0010I</b><br>
+DATA COLLECTION FOR <i>subtower_name</i> ALREADY STARTED<br>
+<b>AQN0011I</b><br>
+DATA COLLECTION FOR <i>subtower_name</i> ALREADY STOPPED<br>
+<b>AQN012I</b><br>
+cmd COMMAND NOT PROCESSED. CURRENT VALUE interval FOR <i>subtower_name</i> MATCHES CHANGE
+VALUE.<br>
+<b>AQN013I</b><br>
+DATA COLLECTION INTERVAL FOR <i>subtower_name</i> SET TO interval<br>
+<b>AQN016A</b><br>
+<i>Reply Yes if Tivoli Enterprise Monitoring Server is inactive on system system. Otherwise, reply No.</i><br>
+<b>AQN019E</b><br>
+CONNECTION FAILURE TO <i>server</i> ON SOCKET PATH <i>path</i>. REPORTING MODULE=<i>module_name</i>. RC:<br>
+<i>return_code</i> REASON:<i> reason</i><br>
+<b>AQN023I</b><br>
+DISPLAY OF LOAD BALANCERS<br>
+<b>AQN027I</b><br>
+DISPLAY OF <i>role</i> WORKLOADS FOR WORKLOAD NAME <i>workload_name</i><br>
+<b>AQN028I</b><br>
+SOCKET PATH NAME <i>path</i> NOT CONFIGURED FOR <i>subtower_name</i><br>
+<b>AQN029I</b><br>
+UNEXPECTED VALUE <i>value</i> RECEIVED FOR <i>fieldname</i> FOR DATA SOURCE <i>subtower_name</i><br>
+<b>AQN030I</b><br>
+DISPLAY OF REPLICATION SERVER WORKLOADS c<i>workload_name</i> FOR DATA SOURCE <i>type</i><br>
+<b>AQN031I</b><br>
+DISPLAY OF <i>type </i>CAPTURE WORKLOAD DETAILS FOR WORKLOAD <i>workload_name</i><br>
+<b>AQN032I</b><br>
+DISPLAY OF <i>type</i> APPLY WORKLOAD DETAILS FOR WORKLOAD <i>workload_name</i><br>
+<b>AQN033I</b><br>
+DISPLAY OF Q REPLICATION DATA FOR SEND QUEUE <i>send_queue</i> WORKLOAD <i>workload_name</i><br>
+<b>AQN034I</b><br>
+DISPLAY OF Q REPLICATION DATA FOR RECEIVE QUEUE <i>receive_queue</i> WORKLOAD <i>workload_name</i><br>
+<b>AQN035I</b><br>
+DISPLAY OF Q REPLICATION CAPTURE SERVER <i>server_job_name</i> DATA ON SITE <i>server_site</i><br>
+<b>AQN036I</b><br>
+DISPLAY OF Q REPLICATION APPLY SERVER <i>server_job_name</i> DATA ON SITE <i>server_site</i><br>
+<b>AQN039I</b><br>
+TOWER ACTIVEACTIVE.REPLICATION.<i>subtwr</i> NOT ENABLED FOR DOMAIN <i>domain</i><br>
+<b>AQN040I</b><br>
+COMMON GLOBAL VARIABLE <i>variable</i> IS NOT DEFINED FOR DOMAIN <i>domain</i><br>
+<b>AQN041I</b><br>
+SOCKET PATH DEFINITION <i>statement</i> IS NOT SEQUENTIAL<br>
+<b>AQN042I</b><br>
+NO <i>subtower_name server_type</i> SOCKET PATH INFORMATION FORWARDED TO CONTROLLER,<br>
+REASON <i>'reason'</i><br>
+<b>AQN042I</b><br>
+MAXIMUM NUMBER OF <i>subtower_name server_type</i> SOCKET PATH DEFINITIONS EXCEEDED<br>
+<b>BNH229I</b><br>
+<i>option value mm/dd/yy hh:mm:ss updateid</i><br><br>
+<b>BNH498I</b><br>
+NUMBER OF INTERFACES: <i>numintf</i><br>
+<b>BNH598I</b><br>
+NUMBER OF HIPERSOCKETS INTERFACES: <i>numhiper</i><br>
+<b>BNH608I</b><br>
+<i>’requestname'</i> REQUEST COMPLETED SUCCESSFULLY<br>
+<b>BNH812</b><br>
+<i>command</i> ISSUED FOR <i>task_name</i> COMPLETED WITH STATUS <i>code</i><br>
+<b>BNH863I</b><br>
+DISPLAY OF NETVIEW WEB SERVICES INFORMATION<br>
+<b>BNH881I</b><br>
+DATA COLLECTION FAILED FOR SUBTOWER <i>subtower_name,</i> REASON <i>'reason'</i><br>
+<b>BNH898E</b><br>
+NETVIEW WEB SERVICES <i>srvr_name</i> INITIALIZATION FAILED DUE TO <i>reason_text rc</i><br>
+<b>BNH911I</b><br>
+<i>request :</i> NO DATA FOUND FOR <i>'subject'</i><br>
+<b>CNM543I</b><br>
+UNABLE TO FIND NETVIEW SUBSYSTEM COMMUNICATIONS TABLE FOR <i>ssi_name</i><br>
+<b>CNM598W</b><br>
+SUBSYSTEM IS NOT ACTIVE FOR <i>ssi_name</i><br>
+<b>CNM742I</b><br>
+NO CANZLOG ARCHIVE BROWSE DATA SPACES CREATED<br>
+DSI002I <i>(changed for IACz, no visible changes)</i><br>
+INVALID COMMAND: <i>'command'</i><br>
+<b>DSI031I</b><br><br>
+SPECIFIED NAME <i>'name'</i> INVALID<br>
+<b>DSI823I</b><br>
+<i>member</i> HAS A MISSING OR INCORRECT SIGNATURE<br>
+<b>DWO090A</b><br>
+<i>action error for component. Maintenance required.</i><br>
+<b>DWO155I</b><br>
+NETVIEW DOES NOT HAVE A JES JOBID<br>
+<b>DWO384I</b><br>
+TIME-OUT OCCURRED. <i>'command' </i>FOR <i>'target'</i> IS TERMINATED.<br>
+<b>EZL563E</b><br>
+ERROR ACCESSING <i>domain1</i> OUTBOUND GATEWAY TO DOMAIN <i>domain2</i> - RC= <i>rc</i><br>
+<b>EZL917E</b><br>
+ERROR OCCURRED. BROWSE LOG FOR MORE INFORMATION<br>
+<b>FKX400I</b><br>
+tracetype SCHEDULED FOR SP sp BY OPERATOR operid<br>
+<b>FKX401I</b><br>
+<i>tracetype</i> - DELAY TRACE SCHEDULED FOR SP <i>sp</i> BY operid<br><br>
+<b>FKX402I</b><br>
+<i>tracetype action </i>START FOR SP <i>sp</i> FAILED - MESSAGE <i>msgid </i>RECEIVED.<br>
+<b>FKX403I</b><br>
+<i>tracetype</i> STOPPED FOR SP <i>sp</i>BY OPERATOR <i>operid</i><br>
+<b>FKX405I</b><br>
+TARGET DOMAIN/PROC FOR SP<i> sp </i>IS NOT VALID<br>
+<b>FKX406I</b><br>
+<i>tracetype</i> - DELAYED TRACE FAILED FOR SP <i>sp</i> BY operid<br>
+<b>FKX407I</b><br>
+DELAYED <i>tracetype</i> BLOCKED BY SECURITY FOR SP <i>sp</i> BY operid<br>
+<b>FKX410I</b><br>
+UNABLE TO START <i>tracetype</i> ON SP <i>sp</i> - TRACE ALREADY ACTIVE<br>
+<b>FKX411I</b><br>
+UNABLE TO STOP <i>tracetype</i> ON SP <i>sp</i> - TRACE NOT ACTIVE<br>
+<b>FKX412I</b><br>
+START <i>tracetype</i> ON SP <i>sp</i> FAILED - TRACE ALREADY SCHEDULED<br>
+<b>FKX413I</b><br>
+THE PROCNAME <i>proc</i> IS NOT DEFINED ON SP <i>sp</i><br><br>
+</p7>
+<p8 style="font-size: 30;">Samples</p8><br>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 5px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h2{
+                color:black;
+                font-family: aller;
+                font-size: 30px;
+            }
+        </style>
+<p9 style="font-size: 20;">"New Samples” on page 120 lists new samples for the NetView V6R2 program:<br><br>
+    <b>New Samples</b><br><br>CNMSCMSG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNMSFMSG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNMSSCFG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNMSSNIT<br><br>CNMSSVNT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNMSS010&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNMSTMSG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNMS8050<br><br>
+CNMS8051&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CNMS8052&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DSICCDNV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DSIOPFAU<br><br>
+DSIOPFEX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DSIOPFIX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DSIOPFST<br><br>
+
+</p9>
+        <p10 style="font-size: 30;">Command Changes</p10><br>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 5px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h2{
+                color:black;
+                font-family: aller;
+                font-size: 30px;
+            }
+        </style>
+        <p11 style="font-size: 20;">This section lists new and changed commands for the NetView V6R2 program:<br>
+• “New Commands” on page 121<br>
+• “Changed Commands” on page 121<br>
+            <b>New Commands</b><br><img style="width: 700px;height: 250px;" src="p6.png"><br>
+        <b>Changed Commands</b><br>
+        The following commands have been changed:<br>
+• ACTVCTL<br>
+• ACTVLIFE<br>
+• ACTVREPL<br>
+• ALL (CANZLOG)<br>
+• BROWSE (NCCF)<br>
+• CANZLOG<br>
+• CNMECZFS<br>
+• DEFAULTS (NCCF)<br>
+• DISPMSG
+• DSITSTAT (REXX)<br>
+• DVIPCONN<br>
+• FIND (CANZLOG)<br>
+• FMTPACKT<br>
+• LIST (NCCF)<br>
+• MVS<br>
+• OVERRIDE<br>
+• PKTS<br>
+• PKTTRACE<br>
+• SECMIGR<br>
+• SOACTL<br>
+
+        </p11>
+        <p12 style="font-size: 30;">Enterprise Management Agent Changes</p12><br>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 5px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h2{
+                color:black;
+                font-family: aller;
+                font-size: 30px;
+            }
+        </style>
+        <p13 style="font-size: 20;">The following changes are available with the NetView Monitoring for GDPS for Version 6 Release 2:<br>
+• All queries and workspaces that are new or changed for Version 6 Release 2 include the qualifier
+(V620) in the query and workspace descriptions. The identification of the version, release, and
+modification level for queries and workspaces began with Version 5 Release 4. Queries and workspaces
+that were part of the product before V5R4 do not include a qualifier.<br>
+• Table 47 on page 123 shows the changes to existing workspaces that are used for monitoring the status
+of workloads and other managed elements in the GDPS Continuous Availability solution.<br><img style="width: 700px;height: 1150px;" src="p7.png"><br><img style="width: 700px;height: 1150px;" src="p8.png"><br><img style="width: 700px;height: 1150px;" src="p9.png"><br>• Four new workspaces and three new attribute groups are added for monitoring the status of workloads
+and other managed elements in the GDPS Continuous Availability solution. Table 48 on page 125 shows
+the workspaces that are new and the associated attribute group or groups.<br><img style="width: 700px;height: 150px;" src="p10.png"><br><img style="width: 700px;height: 250px;" src="p11.png"><br>• The following situations for the GDPS Continuous Availability solution are new:<br>
+– NAS_AA_RS_VSAMWorkloadState<br>
+– NAS_AA_RW_AggregationStatus<br>
+– NAS_AA_RW_ConsistencyGroups<br>
+– NAS_AA_RW_WorkloadLatency<br>
+– NAS_AA_VSAM_AppQPctFull_Crit<br>
+– NAS_AA_VSAM_AppQPctFull_Warn<br>
+– NAS_AA_VSAM_CapQPctFull_Crit<br>
+– NAS_AA_VSAM_CapQPctFull_Warn<br>
+• The following situation is new and is associated with the NetView Health node in the Navigator:
+– NAS_NVApp_Enterprise_Master<br>
+• Table 49 on page 126 shows the changes to existing take action commands for the GDPS Continuous
+Availability solution.<br><img style="width: 700px;height: 500px;" src="p12.png"><br><img style="width: 700px;height: 400px;" src="p13.png"><br>• The following take action commands for the GDPS Continuous Availability solution are new:<br><img style="width: 700px;height: 250px;" src="p13.png">
+
+</p13>
